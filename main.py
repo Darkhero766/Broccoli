@@ -171,7 +171,160 @@ def easy():
 
     st.write(" ")
     st.write(" ")
+
+    if st.button("1. Induction "):
+        if "Indcution" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌Beeeep Wrong Answer")
+        
+    st.write(" ")
+
+    if st.button("2. Electromagnetism"):
+        if "Electromagnetism" == correct_answer:
+            st.success("✅ Correct Answer...")
+        
+        else :
+            st.error("❌Beeeep Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("3. Infrared"):
+        if "Infrared" == correct_answer:
+            st.success("✅ Correct Answer")
+        else: 
+            st.error("❌ Microwave")
+
+    st.write(" ")
+
+    if st.button("4. Microwave"):
+        if "Microwave" == correct_answer:
+            st.success("✅ Correct Answer")
+        
+        else:
+            st.error("❌ Wring answer ")
+            
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("⏭️ Next Question......"):
+        st.session_state.stage = "easy1"
+
     
+
+def easy1():
+    st.header("Q.2 What is the active ingredient in household bleach to kills bacteria?")
+    correct_answer = "Hypochlorite"
+
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Hypochlorite "):
+        if "Hypochlorite" == correct_answer:
+            st.success("✅ Correct Answer")
+        else:
+            st.error("❌Beeep Wrong One.......")
+
+    st.write(" ")
+
+    if st.buttom("2. Chloride"):
+        if "Chloride" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌ Wrong One beeeeeep")
+
+    st.write(" ")
+
+    if st.button("3. Bicarbonate"):
+        if "Bicarbonate" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌Beeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("4. Acetate "):
+        if "Acetate" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌Wrong One")
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("⏭️ Next Question "):
+        st.session_state.stage = "easy2"
+
+    
+
+def easy2():
+    st.header("Q.3 Why LED bulbs use lesser Energy than old Incandescent bulbs?")
+
+    correct_answer = "Electroluminescence"
+
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Incandescence"):
+        if "Incandescence" == correct_answer:
+            st.success("✅ Correct Answer")
+        
+        else:
+            st.error("❌ Wrong Answer")
+    st.write(" ")
+
+    if st.button("2. Electroluminescence"):
+        if "Electroluminescence" == correct_answer:
+            st.success("✅ Correct Answer...")
+        else:
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("3. Combustion"):
+        if "Combustion" == correct_answer:
+            st.success("✅ Correct Answer")
+        
+        else:
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("4. Phosphorescence"):
+        if "Phosphorescence" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        
+        else:
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("Return to Menu"):
+        st.session_state.stage = "main"
+
+def intermediate ():
+    st.header("Q.1 What Cosmic force must Spacecraft escape velocity mist overcome to come oit of earth?")
+    correct_answer = "Gravity"
+    st.write(" ")
+    st.write(" ")
+
+    if st.buttom("1. Inertia"):
+        if "Ineetia" == correct_answer:
+            st.success("✅ Correct Answer ")
+
+        else:
+            st.error("❌Wrong One Beeep")
+            
     
 
 def history():
