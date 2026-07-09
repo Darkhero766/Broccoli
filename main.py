@@ -1,10 +1,10 @@
 import streamlit as st
 import random
 
-stage = "home"
+stage = "main"
 
 if "stage" not in st.session_state:
-    st.session_state.stage = "home"
+    st.session_state.stage = "main"
 
 def main():
     st.title("Master Quiz")
@@ -15,14 +15,33 @@ def main():
         st.session_state.stage = "random"
 
 def random():
+    st.header("Select the quiz to continue. ")
     quizzes = [
         "python",
         "Science",
         "History"
     ]
 
-    random_quiz = random.choice(quizzes)
-    st.session_state.stage = random_quiz
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Python"):
+        st.session_state.stage = "python"
+    st.write(" ")
+
+    if st.button("2. History"):
+        st.session_state.stage = "history"
+
+    st.write(" ")
+
+    if st.button("3. Science"):
+        st.session_state.stage = "science"
+
+    
+
+
+
+    
 
 def python():
     st.header("Who is the inventor of Python Language")
@@ -162,7 +181,7 @@ def science():
     st.write(" ")
 
     if st.button("Hard"):
-        st.session_state.stage = "hard":
+        st.session_state.stage = "hard"
         
     
 def easy():
@@ -406,7 +425,7 @@ def intermediate1():
         st.session_state.stage = "int2"
 
 
-def intermediate2()
+def intermediate2():
     st.header("Q.3 What type of Radiation dies cosmic microwave backround data reveals?")
 
     correct_answer = "Microwave"
@@ -572,7 +591,237 @@ def hard2():
         else:
             st.error("❌ Wrong Answer !!!")
 
-def history():
-    pass
+    st.write(" ")
 
-main()
+    if st.button("2. Quartz "):
+        if "Quartz" == correct_answer:
+            st.success("Correct Answer ")
+
+        else: 
+            st.error("❌ Wrong Answe")
+
+    st.write(" ")
+
+    if st.button("3. Diamond"):
+        if "Diamond" == correct_answer:
+            st.success("Correct Answer")
+        else:
+            st.error(" ❌Wrong One Beeeeep")
+
+    st.write(" ")
+
+    if st.button("4. Germanium "):
+        if "Germanium" == correct_answer:
+            st.success("Correct Answer")
+        else:
+            st.error("❌ Wrong Answer beeeep")
+
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("Return to Menu"):
+        st.session_state.stage = "main"
+
+
+def history():
+    st.header("Q.1 Which Macedonian king conquered the persian Land before the age of 30 ?")
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    correct_answer = "Alexander"
+
+    if st.button("1. Alexander"):
+        if "Alexander" == correct_answer:
+            st.success("Correct Answer")
+
+        else:
+            st.error("❌Beeeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("2. Marcus Aurelius"):
+        if "Marcus Aurelius" == correct_answer:
+            st.success("Correct Answer")
+
+        else: 
+            st.error("❌ Wrong One Beep")
+
+    st.write(" ")
+
+    if st.button("3. Caesar"):
+        if "Caesar" == correct_answer:
+            st.success("Correctooooooo")
+        else:
+            st.error("❌ Wrong One ")
+
+    st.write(" ")
+
+    if st.button("4. Cyrus"):
+        if "Cyrus" == correct_answer:
+            st.success("Correct Answer")
+        
+        else:
+            st.button("❌ Beep One beeep")
+
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("⏭️Next One"):
+        st.session_state.stage = "history1"
+
+def history1():
+    st.header("Q.2 Which french military leader crowned himself as emperor in 1804 ???")
+    correct_answer = "Napoleon"
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Louis"):
+        if "Louis" == correct_answer:
+            st.success("Correct Answer")
+        else: 
+            st.error("❌Beeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("2. Napoleon "):
+        if "Napoleon" == correct_answer:
+            st.success("Correct Answerrrr!!!!!")
+
+        else:
+            st.error("❌ Beeeeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("3. Charlemagne"):
+        if "Charlemagne" == correct_answer:
+            st.success(" Correct Answer")
+
+        else:
+            st.echo("❌ Wrong One")
+
+    st.write(" ")
+
+    if st.button("4. Lafayette "):
+        if "Lafayette" == correct_answer:
+            st.success("Correct Answer")
+        else:
+            st.error("❌Bleeeh Wrong One")
+
+    st.write(" ")
+    st.write(" ")
+    st.writ (" ")
+
+    if st.button(" ⏭️ Next Question "):
+        st.session_state.stage == "history2"
+
+def history2():
+    st.header("Q.3 Which famous Stone blocked allowed historian to finally decode egyptian hieroglyphs??")
+    correct_answer = "Rosetta"
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("1. Rosetta"):
+        if "Rosetta" == correct_answer:
+            st.success("Correct Answer")
+
+        else:
+            st.error("❌Wrong One ")
+
+    st.write(" ")
+
+    if st.button("2. Blarney"):
+        if "Blarney" == correct_answer:
+            st.success("Correct Answer ")
+        
+        else:
+            st.error("❌ Wrong One")
+
+    st.write(" ")
+
+    if st.button("3. Giza"):
+        if "Giza" == correct_answer:
+            st.success(" Correct Answer")
+
+        else:
+            st.error("❌ Bleeeeeh Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("4. Pyson"):
+        if "Pyson" == correct_answer:
+            st.success("Correct Answer")
+            
+        else:
+            st.error("❌Wrong Answer")
+
+
+    st.write(" ")
+    st.write(" ")
+    
+    st.write(" ")
+
+    if st.button("Return To menu"):
+        st.session_state.stage = "main"
+
+
+if st.session_state.stage == "main":
+    main()
+
+elif st.session_state.stage == "random":
+    random()
+
+elif st.session_state.stage == "python":
+    python()
+
+elif st.session_state.stage == "python1":
+    python1()
+
+elif st.session_state.stage == "python2":
+    python2()
+
+elif st.session_state.stage == "science":
+    science()
+
+elif st.session_state.stage == "easy":
+    easy()
+
+elif st.session_state.stage == "easy1":
+    easy1()
+
+elif st.session_state.stage == "easy2":
+    easy2()
+
+elif st.session_state.stage == "int":
+    intermediate()
+elif st.session_state.stage == "int1":
+    intermediate1()
+
+elif st.session_state.stage == "int2":
+    intermediate2()
+
+elif st.session_state.stage == "hard":
+    hard()
+
+elif st.session_state.stage == "hard1":
+    hard()
+elif st.session_state.stage == "hard2":
+    hard2()
+
+elif st.session_state.stage == "history":
+    history()
+
+elif st.session_state.stage == "history1":
+    history1()
+elif st.session_state.stage == "history2":
+    history2()
+
