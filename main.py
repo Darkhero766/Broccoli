@@ -324,8 +324,253 @@ def intermediate ():
 
         else:
             st.error("❌Wrong One Beeep")
-            
+
+    st.write(" ")
+
+    if st.button("2. Friction"):
+        if "Friction" == correct_answer:
+            st.success("✅ Correct Answer")
+        else:
+            st.error("❌Wrong Answer")
     
+    st.write(" ")
+
+    if st.button("3. Gravity"):
+        if "Gravity" == correct_answer:
+            st.success("✅ Correct Answer")
+        else:
+            st.error("❌Beeeeep Wrong Ansswer")
+
+    st.write(" ")
+
+    if st.button("4. Magnetism"):
+        if "Mangnetism" == correct_answer:
+            st.success("✅ Correct ")
+
+        else: 
+            st.error(" ❌Beeeo Wrong One ")
+
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button(" ⏭️ Next Question "):
+        st.session_state.stage = "int1"
+
+
+def intermediate1():
+    st.header("Q.2  What happeens to the satellite signals passing through the ionosphere ?")
+    correct_answer = "Refraction"
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("1. Refraction "):
+        if "Refraction" == correct_answer:
+            st.success("✅Correct Answeerrr babe")
+        else:
+            st.error("❌Beeeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("2. Amplification "):
+        if "Amplification" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌Beeeeep Wr9ng Answer")
+
+    st.write(" ")
+
+    if st.button("3. Freezing"):
+        if "Freezing" == correct_answer:
+            st.success("✅ Correct Answer")
+        else:
+            st.error("❌Wrong One Babe")
+
+    st.write(" ")
+
+    if st.button("4. Combustions "):
+        if "Combustion" == correct_answer:
+            st.success("✅ Correct Answer")
+        else:
+            st.error("❌Beeeeeeeeep Wrong Oneee")
+
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("⏭️ Next Question "):
+        st.session_state.stage = "int2"
+
+
+def intermediate2()
+    st.header("Q.3 What type of Radiation dies cosmic microwave backround data reveals?")
+
+    correct_answer = "Microwave"
+    st.write(" ")
+    st.write(" ")
+
+    st.write(" ")
+
+    if st.button("1. Ultraviolet"):
+        if "Ultraviolet" == correct_answer:
+            st.success("✅Correct Answer")
+
+        else:
+            st.error("❌ Beeeep Wrong One")
+
+    st.write(" ")
+
+    if st.button("2. Infrared "):
+        if "Infrared" == correct_answer:
+            st.success("✅ Correct Answer ")
+
+        else:
+            st.error("❌ Weong Answer")
+
+    st.write(" ")
+
+    if st.button("2. X-ray "):
+        if "X-ray" == correct_answer:
+            st.success("✅ Correct Answer ")
+        else:
+            st.error("❌ Beeeeeep Wrong one")
+
+    st.write(" ")
+
+    if st.button("4. Microwave"):
+        if "Microwave" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else:
+            st.error("❌ Wrong Answer Beeeeeeep")
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("Return to Menu"):
+        st.session_state.stage= "maim"
+
+
+def hard():
+    st.header("Q 1 What Mathematical tool used filter noisy sensor data for realtime spacecraft trajectory system ?? ")
+    
+    correct_answer = "Kalman"
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Fourier "):
+        if "Fourier" == correct_answer:
+            st.success("✅ Correct Answer")
+        else: 
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("2. Kalman"):
+        if "Kalman" == correct_answer:
+            st.success("✅ Correct Answer")
+
+        else: 
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("3. Laplace"):
+        if "Laplace" == correct_answer:
+            st.success("✅ Correct Answer ")
+
+        else: 
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("4. Newton"):
+        if "Newton" == correct_answer:
+            st.success("✅ Correct Answer ")
+
+        else:
+            st.error("❌ Wrong Asnwer")
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("⏭️ Next Question...."):
+        st.session_state.stage = "hard1"
+        
+
+def hard1():
+    st.header("Q.2 What chemical element acts as primary propellant in modern ion thruster propulsion ?")
+
+    correct_answer = "Xenon"
+    st.write(" ")
+
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Argon "):
+        if "Argon" == correct_answer:
+            st.success("Correct Answer 😝😝")
+        else:
+            st.error("❌ Wrong Answer")
+
+    st.write(" ")
+
+    if st.button("2. Xenon"):
+        if "Xenon" == correct_answer:
+            st.success(" Correcr Answer !!!!!!")
+
+        else:
+            st.error("❌ Beeeeep Wromg One")
+
+    st.write(" ")
+
+    if st.button("3. Hydrogen"):
+        if "Hydrogen" == correct_answer:
+            st.success(" Cirrect Answwer")
+
+        else:
+            st.error("❌Wrong onee")
+
+    st.write(" ")
+
+    if st.button("4. Helium"):
+        if "Helium" == correct_answer:
+            st.success(" Correct Answer")
+
+        else:
+            st.error("❌ Wrong Answer Beeeeeeep")
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("⏭️ Next Question "):
+        st.session_state.stage = "hard2"
+
+
+def hard2():
+    st.header("Q.3 What crystalline material foucused hard X-ray in advanced Space telescope Optics ??")
+    correct_answer = "Germanium"
+
+    st.write(" ")
+
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("1. Silicon"):
+        if "Silicon" == correct_answer:
+            st.success(" Correct Answer !!!")
+
+        else:
+            st.error("❌ Wrong Answer !!!")
 
 def history():
     pass
