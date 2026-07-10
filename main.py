@@ -91,15 +91,12 @@ def python1():
         else:
             st.error("❌Wrong Answer")
     st.write(" ")
-    st.write(" ")
 
     if st.button("1957"):
         if "1957" == correct_answer:
             st.success("👍 Correct Answer!!!")
         else :
             st.error("❌Wrong Answer ")
-    st.write(" ")
-
     st.write(" ")
 
     if st.button("1999"):
@@ -148,6 +145,7 @@ def python2():
             st.success("✅ Correct Answer")
         else:
             st.error("❌Wrong Answer....")
+    st.write(" ")
 
     if st.button("4. List"):
         if "List" == correct_answer:
@@ -182,6 +180,13 @@ def science():
 
     if st.button("Hard"):
         st.session_state.stage = "hard"
+
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+
+    if st.button("Return to Mian Menu"):
+        st.session_state.stage = "main"
         
     
 def easy():
@@ -222,7 +227,7 @@ def easy():
             st.success("✅ Correct Answer")
         
         else:
-            st.error("❌ Wring answer ")
+            st.error("❌ Wrong answer ")
             
     st.write(" ")
     st.write(" ")
@@ -248,7 +253,7 @@ def easy1():
 
     st.write(" ")
 
-    if st.buttom("2. Chloride"):
+    if st.button("2. Chloride"):
         if "Chloride" == correct_answer:
             st.success("✅ Correct Answer")
 
@@ -329,7 +334,7 @@ def easy2():
     st.write(" ")
 
     if st.button("Return to Menu"):
-        st.session_state.stage = "main"
+        st.session_state.stage = "science"
 
 def intermediate ():
     st.header("Q.1 What Cosmic force must Spacecraft escape velocity mist overcome to come oit of earth?")
@@ -337,7 +342,7 @@ def intermediate ():
     st.write(" ")
     st.write(" ")
 
-    if st.buttom("1. Inertia"):
+    if st.button("1. Inertia"):
         if "Ineetia" == correct_answer:
             st.success("✅ Correct Answer ")
 
@@ -472,7 +477,7 @@ def intermediate2():
     st.write(" ")
 
     if st.button("Return to Menu"):
-        st.session_state.stage= "maim"
+        st.session_state.stage= "science"
 
 
 def hard():
@@ -717,10 +722,10 @@ def history1():
 
     st.write(" ")
     st.write(" ")
-    st.writ (" ")
+    st.write(" ")
 
     if st.button(" ⏭️ Next Question "):
-        st.session_state.stage == "history2"
+        st.session_state.stage = "history2"
 
 def history2():
     st.header("Q.3 Which famous Stone blocked allowed historian to finally decode egyptian hieroglyphs??")
@@ -813,7 +818,7 @@ elif st.session_state.stage == "hard":
     hard()
 
 elif st.session_state.stage == "hard1":
-    hard()
+    hard1()
 elif st.session_state.stage == "hard2":
     hard2()
 
