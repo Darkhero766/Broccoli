@@ -15,5 +15,5 @@ jobs:
 
             - name: push empty commit
               run: |
-                curl -L -s https://broccoli-ncp5zawswzcwkfkjhlbgq7.streamlit.app/ > /dev/null
+                curl -L -v https://broccoli-ncp5zawswzcwkfkjhlbgq7.streamlit.app/ > /dev/null
                 
