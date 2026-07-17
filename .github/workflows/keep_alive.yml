@@ -1,1 +1,19 @@
+name: keep alive
 
+on:
+   schedule:
+        - cron: '*/15 * * * *'
+   workflow_dispatch:
+
+jobs:
+    auto_commit:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo 
+              uses: actions/checkout@v4
+
+
+            - name: push empty commit
+              run: |
+                curl -L -s https://broccoli-ncp5zawswzcwkfkjhlbgq7.streamlit.app/ > /dev/null
+                
