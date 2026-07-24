@@ -1,6 +1,6 @@
 # Broccoli Quiz App
 
-It Is A quiz App to enhance Your skill more Chnages and Features in future fs. [Check it Out](https://broccoli-ncp5zawswzcwkfkjhlbgq7.streamlit.app). 
+It Is A quiz App to enhance Your skill more Chnages and Features in future fs. [Check it Out](1https://broccoli-kvn8.onrender.com). 
 
 
 ## Motivation
